@@ -2,7 +2,7 @@ package noman.love.java.chapter4.exercises;
 
 import java.util.Scanner;
 
-public class exercise {
+public class exercise4 {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
