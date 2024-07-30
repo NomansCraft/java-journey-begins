@@ -8,8 +8,11 @@ public class StringInput {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter a line: ");
-        String value = input.nextLine();
-        System.out.println("Value = " + value);
+        String inputValue = input.nextLine();
+        inputValue = inputValue.toLowerCase();
+        char[] letters = inputValue.toCharArray();
+
+        System.out.println("Value = " + inputValue);
 
         input.close();
     }
