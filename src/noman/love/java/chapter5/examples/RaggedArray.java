@@ -11,9 +11,9 @@ public class RaggedArray {
                 {5},
         };
 
-        for (int row = 0; row < array.length; row++) {
-            for (int column = 0; column < array[row].length; column++){
-                System.out.print(array[row][column] + " ");
+        for (int[] arrayRow : array) {
+            for (int element : arrayRow){
+                System.out.print(element + " ");
             }
             System.out.println();
         }
