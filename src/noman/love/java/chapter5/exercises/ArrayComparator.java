@@ -10,22 +10,20 @@ public class ArrayComparator {
     }
 
     public static boolean isEqual(int[] array, int[] array2) {
-        int firstArrayLength = array.length;
-        int secondArrayLength = array2.length;
+        if (array == null || array2 == null) {
+            return array == array2;
+        }
 
-        int count = 0;
+        if (array.length != array2.length) {
+            return false;
+        }
 
-        if (firstArrayLength == secondArrayLength) {
-            for (int i = 0; i < firstArrayLength; i++) {
-                if (array[i] == array2[i]) {
-                    count++;
-                }
-            }
-
-            if (firstArrayLength == count && secondArrayLength == count) {
-                return true;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] != array2[i]) {
+                    return false;
             }
         }
-        return false;
+        return true;
     }
+
 }
