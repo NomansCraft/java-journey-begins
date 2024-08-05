@@ -10,13 +10,12 @@ public class Person {
     }
 
     public Person(String name, String email) {
-        this.name = name;
+        this(name);
         this.email = email;
     }
 
     public Person(String name, String email, int age) {
-        this.name = name;
-        this.email = email;
+        this(name, email);
         this.age = age;
     }
 
