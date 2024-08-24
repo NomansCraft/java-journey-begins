@@ -24,5 +24,10 @@ public class EnumExample {
         EnumExample enumExample = new EnumExample();
         Day day = Day.SATURDAY;
         enumExample.displayDay(day);
+
+        Day[] values = Day.values();
+        for (Day day2 : values) {
+            System.out.println(day2);
+        }
     }
 }
