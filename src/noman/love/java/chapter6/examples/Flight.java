@@ -10,6 +10,7 @@ public class Flight {
         if (carryOns > 2) {
             totalBags = bags + carryOns - 2;
         }
+        addOnePassenger(totalBags);
     }
 
     public void addOnePassenger(int bags) { // Chigarette
