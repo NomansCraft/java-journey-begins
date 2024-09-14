@@ -1,6 +1,6 @@
 package noman.love.java.chapter7.examples;
 
-public final class Password {
+public class Password {
     private char[] hash;
 
     public Password(char[] hash) {
@@ -10,7 +10,7 @@ public final class Password {
     // Some useful code
 }
 
-public class SaltedPassword extends Password {
+ class SaltedPassword extends Password {
     private String salt;
 
     public SaltedPassword(char[] hash, String salt) {
