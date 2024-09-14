@@ -1,4 +1,4 @@
-package noman.love.java.chapter7.examples.abstractclass;
+package noman.love.java.chapter7.examples.abstractclassandmethod;
 
 public class ZooDemo {
     public static void main(String[] args) {

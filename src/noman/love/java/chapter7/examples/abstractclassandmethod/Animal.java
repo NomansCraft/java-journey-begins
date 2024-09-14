@@ -1,4 +1,4 @@
-package noman.love.java.chapter7.examples.abstractclass;
+package noman.love.java.chapter7.examples.abstractclassandmethod;
 
 public abstract class Animal {
     private final int legs;
@@ -8,6 +8,8 @@ public abstract class Animal {
         this.legs = legs;
         this.name = name;
     }
+
+    public abstract String getDiet();
 
     @Override
     public String toString() {
